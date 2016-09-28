@@ -30,8 +30,8 @@
 
 package org.jrimum.bopepo.view.info.campo;
 
-import static org.apache.commons.lang.StringUtils.EMPTY;
-import static org.apache.commons.lang.StringUtils.isNotBlank;
+import static org.apache.commons.lang3.StringUtils.EMPTY;
+import static org.apache.commons.lang3.StringUtils.isNotBlank;
 
 import org.jrimum.domkee.financeiro.banco.febraban.Titulo;
 

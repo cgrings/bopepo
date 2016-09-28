@@ -37,7 +37,6 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.WeakHashMap;
 
-import org.apache.log4j.Logger;
 import org.jrimum.bopepo.Boleto;
 import org.jrimum.bopepo.view.BoletoCampo;
 import org.jrimum.bopepo.view.ResourceBundle;
@@ -46,6 +45,8 @@ import org.jrimum.bopepo.view.info.campo.BoletoInfoCampoViewFactory;
 import org.jrimum.utilix.Collections;
 import org.jrimum.utilix.Exceptions;
 import org.jrimum.utilix.Objects;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Lê os dados do Boleto e monta-os para uso em {@linkplain #texts()} e {@linkplain #images()}. 
@@ -58,7 +59,7 @@ import org.jrimum.utilix.Objects;
  */
 public class BoletoInfoViewBuilder {
 	
-	private static Logger log = Logger.getLogger(BoletoInfoViewBuilder.class);
+	private static Logger log = LoggerFactory.getLogger(BoletoInfoViewBuilder.class);
 	
 	private final Map<String,String> text;
 	private final Map<String,Image> image;

@@ -30,13 +30,14 @@
 
 package org.jrimum.bopepo;
 
-import org.apache.commons.lang.StringUtils;
-import org.apache.log4j.Logger;
+import org.apache.commons.lang3.StringUtils;
 import org.jrimum.texgit.type.component.BlockOfFields;
 import org.jrimum.texgit.type.component.FixedField;
 import org.jrimum.utilix.Objects;
 import org.jrimum.utilix.text.Strings;
 import org.jrimum.vallia.digitoverificador.BoletoLinhaDigitavelDV;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 /**
@@ -169,7 +170,7 @@ public class LinhaDigitavel extends BlockOfFields {
 	 */
 	private static final long serialVersionUID = -6089634012523938802L;
 	
-	private static Logger log = Logger.getLogger(LinhaDigitavel.class);
+	private static Logger log = LoggerFactory.getLogger(LinhaDigitavel.class);
 	
 	/**
 	 * 

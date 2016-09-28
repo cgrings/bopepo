@@ -33,8 +33,7 @@ import static java.lang.String.format;
 import static java.math.BigDecimal.ZERO;
 import static org.jrimum.domkee.financeiro.banco.febraban.Banco.isCodigoDeCompensacaoOK;
 
-import org.apache.commons.lang.StringUtils;
-import org.apache.log4j.Logger;
+import org.apache.commons.lang3.StringUtils;
 import org.jrimum.bopepo.BancosSuportados;
 import org.jrimum.domkee.financeiro.banco.ParametroBancario;
 import org.jrimum.domkee.financeiro.banco.febraban.Titulo;
@@ -42,6 +41,8 @@ import org.jrimum.texgit.type.FixedField;
 import org.jrimum.texgit.type.component.BlockOfFields;
 import org.jrimum.utilix.Objects;
 import org.jrimum.utilix.text.Strings;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * <p>
@@ -92,7 +93,7 @@ abstract class AbstractCampoLivre extends BlockOfFields implements CampoLivre {
 	/**
 	 * Looger.
 	 */
-	private static Logger log = Logger.getLogger(Objects.class);
+	private static Logger log = LoggerFactory.getLogger(Objects.class);
 	
 	/**
 	 * Nosso número com 7 posições.

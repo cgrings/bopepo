@@ -29,8 +29,8 @@
 
 package org.jrimum.bopepo.pdf;
 
-import static org.apache.commons.lang.StringUtils.isBlank;
-import static org.apache.commons.lang.StringUtils.isNotBlank;
+import static org.apache.commons.lang3.StringUtils.isBlank;
+import static org.apache.commons.lang3.StringUtils.isNotBlank;
 import static org.jrimum.utilix.Collections.hasElement;
 import static org.jrimum.utilix.Objects.checkNotNull;
 import static org.jrimum.utilix.Objects.isNotNull;
@@ -46,11 +46,12 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.WeakHashMap;
 
-import org.apache.log4j.Logger;
 import org.jrimum.utilix.Collections;
 import org.jrimum.utilix.Exceptions;
 import org.jrimum.utilix.Objects;
 import org.jrimum.utilix.text.Strings;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.lowagie.text.Image;
 import com.lowagie.text.pdf.AcroFields;
@@ -71,7 +72,7 @@ import com.lowagie.text.pdf.PdfStamper;
  */
 public class PdfDocMix {
 
-	private static final Logger LOG = Logger.getLogger(PdfDocMix.class);
+	private static final Logger LOG = LoggerFactory.getLogger(PdfDocMix.class);
 	
 	private PdfReader reader;
 	private PdfStamper stamper;

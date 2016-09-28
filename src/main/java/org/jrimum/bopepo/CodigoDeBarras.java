@@ -33,8 +33,7 @@ package org.jrimum.bopepo;
 import java.math.BigDecimal;
 import java.util.Date;
 
-import org.apache.commons.lang.StringUtils;
-import org.apache.log4j.Logger;
+import org.apache.commons.lang3.StringUtils;
 import org.jrimum.bopepo.campolivre.CampoLivre;
 import org.jrimum.domkee.financeiro.banco.febraban.ContaBancaria;
 import org.jrimum.domkee.financeiro.banco.febraban.Titulo;
@@ -44,6 +43,8 @@ import org.jrimum.texgit.type.component.FixedField;
 import org.jrimum.utilix.Objects;
 import org.jrimum.utilix.text.DecimalFormat;
 import org.jrimum.vallia.digitoverificador.BoletoCodigoDeBarrasDV;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 /**
@@ -119,7 +120,7 @@ public class CodigoDeBarras extends BlockOfFields{
 	 */
 	private static final long serialVersionUID = 748913164143978133L;
 	
-	private static Logger log = Logger.getLogger(CodigoDeBarras.class);
+	private static Logger log = LoggerFactory.getLogger(CodigoDeBarras.class);
 	
 	/**
 	 * 

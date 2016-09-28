@@ -29,7 +29,7 @@
  */
 package org.jrimum.bopepo.campolivre;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.jrimum.domkee.financeiro.banco.febraban.Titulo;
 import org.jrimum.texgit.type.FixedField;
 import org.jrimum.vallia.digitoverificador.Modulo;

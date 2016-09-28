@@ -30,7 +30,7 @@
 
 package org.jrimum.bopepo.view;
 
-import static org.apache.commons.lang.StringUtils.EMPTY;
+import static org.apache.commons.lang3.StringUtils.EMPTY;
 import static org.jrimum.utilix.Objects.isNotNull;
 
 import java.io.ByteArrayOutputStream;
@@ -43,13 +43,14 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import org.apache.log4j.Logger;
 import org.jrimum.bopepo.Boleto;
 import org.jrimum.bopepo.pdf.Files;
 import org.jrimum.utilix.Collections;
 import org.jrimum.utilix.Exceptions;
 import org.jrimum.utilix.Objects;
 import org.jrimum.utilix.text.Strings;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * <p>
@@ -80,7 +81,7 @@ public class BoletoViewer {
 	/**
 	 * 
 	 */
-	private static Logger log = Logger.getLogger(BoletoViewer.class);
+	private static Logger log = LoggerFactory.getLogger(BoletoViewer.class);
 
 	/**
 	 * <p>
